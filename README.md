@@ -25,6 +25,12 @@ Nesta aula, você vai:
   - Text, SizedBox e ElevatedButton para a composição visual
 - Conhecer e aplicar os arquivos de cores (AppColor) e tema (AppTheme)
 
+### Diferenças em relação a aula
+
+- Uso do Visual Studio Code ao Invés do IDX
+- Uso de um Dispositivo Virtual Android do Android Studio
+- Para criar o projeto utilizado o comando: flutter create flutter_techtaste
+
 ## Rodar
 
 ### Requisitos
