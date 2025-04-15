@@ -7,6 +7,10 @@
 - Flutter
 - Android
 
+## Galeria imagens
+
+![Splash Screen](/files/screen-01.png)
+
 ## Aula 01 - Seu app começa aqui! Monte a base e a primeira tela
 
 ### Introdução
@@ -30,6 +34,7 @@ Nesta aula, você vai:
 - Uso do Visual Studio Code ao Invés do IDX
 - Uso de um Dispositivo Virtual Android do Android Studio
 - Para criar o projeto utilizado o comando: flutter create flutter_techtaste
+- Pequenas mudanças na UI para ser um pouco mais fiel ao design do Figma
 
 ## Rodar
 
@@ -43,7 +48,7 @@ Nesta aula, você vai:
 
 - clonar este repositório
 - rodar o Android Virtual Device
-- flutter run
+- flutter run --debug
 
 ## Links úteis
 
