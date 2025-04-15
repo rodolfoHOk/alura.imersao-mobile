@@ -6,7 +6,7 @@ ALURA
 
 ## Aula 02
 
-ALURA
+WIDGETS
 
 ## Aula 03
 

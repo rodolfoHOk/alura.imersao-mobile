@@ -9,7 +9,14 @@
 
 ## Galeria imagens
 
-![Splash Screen](/files/screen-01.png)
+### Splash Screen
+
+![Splash Screen 01](/files/splash_screen_01.png)
+
+### Home Screen
+
+![Home Screen 01](/files/home_screen_01.png)
+![Home Screen 02](/files/home_screen_02.png)
 
 ## Aula 01 - Seu app começa aqui! Monte a base e a primeira tela
 
@@ -34,6 +41,26 @@ Nesta aula, você vai:
 - Uso do Visual Studio Code ao Invés do IDX
 - Uso de um Dispositivo Virtual Android do Android Studio
 - Para criar o projeto utilizado o comando: flutter create flutter_techtaste
+- Pequenas mudanças na UI para ser um pouco mais fiel ao design do Figma
+
+## Aula 2 -Transforme dados em experiência real! Construa a Home e exiba os restaurantes
+
+### Introdução
+
+Nesta aula, vamos evoluir a estrutura do app com a criação da Home completa e a navegação entre telas. Você vai aprender a usar widgets como AppBar, Drawer e um formulário de busca, além de modularizar componentes com o CategoryWidget e RestaurantWidget. Também vamos criar um model e um provider para carregar dados dinamicamente e exibir a lista de restaurantes na tela.
+
+Nesta aula, você vai:
+
+- Implementar a navegação entre telas e construir a HomeScreen com AppBar, Drawer e TextFormField
+- Modularizar a interface com os widgets CategoryWidget e RestaurantWidget
+- Criar um model de restaurante com construtor, toMap() e fromMap()
+- Desenvolver a classe RestaurantData para ler e disponibilizar dados de um JSON
+- Utilizar o Provider para gerenciar o estado e exibir dinamicamente os restaurantes na Home
+
+### Diferenças em relação a aula
+
+- Uso do Visual Studio Code ao Invés do IDX
+- Uso de um Dispositivo Virtual Android do Android Studio
 - Pequenas mudanças na UI para ser um pouco mais fiel ao design do Figma
 
 ## Rodar
