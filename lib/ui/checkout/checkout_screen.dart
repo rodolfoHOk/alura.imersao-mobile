@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_techtaste/model/dish.dart';
 import 'package:flutter_techtaste/ui/_core/app_colors.dart';
 import 'package:flutter_techtaste/ui/_core/bag_provider.dart';
+import 'package:flutter_techtaste/ui/checkout/widgets/address_widget.dart';
 import 'package:flutter_techtaste/ui/checkout/widgets/order_item_widget.dart';
+import 'package:flutter_techtaste/ui/checkout/widgets/order_summary_widget.dart';
+import 'package:flutter_techtaste/ui/checkout/widgets/payment_widget.dart';
 import 'package:provider/provider.dart';
 
 class CheckoutScreen extends StatelessWidget {
@@ -80,6 +83,8 @@ class CheckoutScreen extends StatelessWidget {
                   color: AppColors.accentTextColor,
                 ),
               ),
+              SizedBox(height: 8),
+              PaymentWidget(),
               SizedBox(height: 24),
               Text(
                 "Entregar no endereço",
@@ -89,6 +94,8 @@ class CheckoutScreen extends StatelessWidget {
                   color: AppColors.accentTextColor,
                 ),
               ),
+              SizedBox(height: 8),
+              AddressWidget(),
               SizedBox(height: 24),
               Text(
                 "Confirmar",
@@ -98,6 +105,9 @@ class CheckoutScreen extends StatelessWidget {
                   color: AppColors.accentTextColor,
                 ),
               ),
+              SizedBox(height: 8),
+              OrderSummaryWidget(),
+              SizedBox(height: 40),
             ],
           ),
         ),

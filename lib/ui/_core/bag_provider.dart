@@ -31,4 +31,8 @@ class BagProvider extends ChangeNotifier {
     }
     return mapResult;
   }
+
+  int getItemsPrice() {
+    return dishesOnBag.fold(0, (acc, dish) => acc += dish.price);
+  }
 }
