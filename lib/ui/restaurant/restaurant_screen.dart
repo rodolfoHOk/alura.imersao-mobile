@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_techtaste/model/dish.dart';
 import 'package:flutter_techtaste/model/restaurant.dart';
 import 'package:flutter_techtaste/ui/_core/app_colors.dart';
+import 'package:flutter_techtaste/ui/_core/bag_provider.dart';
+import 'package:flutter_techtaste/ui/_core/widgets/appbar.dart';
+import 'package:provider/provider.dart';
 
 class RestaurantScreen extends StatelessWidget {
   final Restaurant restaurant;
@@ -10,31 +13,7 @@ class RestaurantScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        forceMaterialTransparency: true,
-        automaticallyImplyLeading: false,
-        title: Text(restaurant.name),
-        leading: Row(
-          children: [
-            SizedBox(width: 8),
-            IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: Icon(Icons.arrow_back),
-              iconSize: 28,
-            ),
-          ],
-        ),
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Icon(Icons.shopping_cart),
-            iconSize: 28,
-          ),
-          SizedBox(width: 8),
-        ],
-      ),
+      appBar: getAppBar(context: context, title: restaurant.name),
       body: Padding(
         padding: const EdgeInsets.all(24),
         child: Column(
@@ -91,7 +70,11 @@ class RestaurantScreen extends StatelessWidget {
                               ),
                             ),
                             trailing: IconButton(
-                              onPressed: () {},
+                              onPressed: () {
+                                context.read<BagProvider>().addAllDishes([
+                                  dish,
+                                ]);
+                              },
                               icon: const Icon(Icons.add),
                             ),
                           ),

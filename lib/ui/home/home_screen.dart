@@ -4,6 +4,7 @@ import 'package:flutter_techtaste/data/categories_data.dart';
 import 'package:flutter_techtaste/data/restaurants_data.dart';
 import 'package:flutter_techtaste/model/restaurant.dart';
 import 'package:flutter_techtaste/ui/_core/app_colors.dart';
+import 'package:flutter_techtaste/ui/_core/widgets/appbar.dart';
 import 'package:flutter_techtaste/ui/home/widgets/category_widget.dart';
 import 'package:flutter_techtaste/ui/home/widgets/restaurant_widget.dart';
 import 'package:provider/provider.dart';
@@ -16,34 +17,7 @@ class HomeScreen extends StatelessWidget {
     RestaurantsData restaurantsData = Provider.of<RestaurantsData>(context);
 
     return Scaffold(
-      appBar: AppBar(
-        forceMaterialTransparency: true,
-        automaticallyImplyLeading: false,
-        leading: Row(
-          children: [
-            SizedBox(width: 8),
-            Builder(
-              builder: (BuildContext context) {
-                return IconButton(
-                  icon: Icon(Icons.menu),
-                  iconSize: 28,
-                  onPressed: () {
-                    Scaffold.of(context).openDrawer();
-                  },
-                );
-              },
-            ),
-          ],
-        ),
-        actions: [
-          IconButton(
-            icon: Icon(Icons.shopping_cart),
-            iconSize: 28,
-            onPressed: () {},
-          ),
-          SizedBox(width: 8),
-        ],
-      ),
+      appBar: getAppBar(context: context),
       drawer: Drawer(child: Center(child: Text("Conteúdo do drawer"))),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24),
