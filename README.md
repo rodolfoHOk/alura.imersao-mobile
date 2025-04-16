@@ -81,7 +81,9 @@ Nesta aula, você vai:
 
 - Uso do Visual Studio Code ao Invés do IDX
 - Uso de um Dispositivo Virtual Android do Android Studio
-- Pequenas mudanças na UI para ser um pouco mais fiel ao design do Figma
+- Mudanças na UI para ser um pouco mais fiel ao design do Figma
+- Adicionado as seções de pagamento, endereço de entrega e Confirmação do pedido na página de checkout
+- 
 
 ## Rodar
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter_techtaste/data/categories_data.dart';
 import 'package:flutter_techtaste/data/restaurants_data.dart';
 import 'package:flutter_techtaste/model/restaurant.dart';
