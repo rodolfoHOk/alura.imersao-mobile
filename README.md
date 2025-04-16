@@ -63,6 +63,25 @@ Nesta aula, você vai:
 - Uso de um Dispositivo Virtual Android do Android Studio
 - Pequenas mudanças na UI para ser um pouco mais fiel ao design do Figma
 
+## Aula 3 - Finalize o fluxo do app! Crie a experiência completa de pedido
+
+### Introdução
+
+Nesta aula, vamos finalizar o nosso app com a construção da tela de detalhes dos restaurantes e a lógica completa do pedido. Você vai modelar os pratos, integrá-los aos restaurantes, e implementar a funcionalidade de sacola de compras usando Provider e Badges. Também vamos modularizar a AppBar com um badge de itens, criar a tela de Checkout e aplicar a lógica de totalização do pedido.
+
+Nesta aula, você vai:
+
+- Construir a tela de detalhes dos restaurantes e permitir adicionar pratos à sacola
+- Criar o BagProvider para gerenciar a sacola, com métodos de adicionar, remover e limpar itens
+- Modularizar a AppBar com uma função getAppBar, incluindo Badge com contagem de itens
+- Modelar os pratos (dishes) e integrá-los aos restaurantes e à sacola
+- Desenvolver a tela de Checkout, com lógica para totalização do pedido e exibição de valor com toStringAsFixed
+
+### Diferenças em relação a aula
+
+- Uso do Visual Studio Code ao Invés do IDX
+- Uso de um Dispositivo Virtual Android do Android Studio
+
 ## Rodar
 
 ### Requisitos
