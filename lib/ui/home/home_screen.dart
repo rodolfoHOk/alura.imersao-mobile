@@ -8,12 +8,34 @@ import 'package:flutter_techtaste/ui/home/widgets/category_widget.dart';
 import 'package:flutter_techtaste/ui/home/widgets/restaurant_widget.dart';
 import 'package:provider/provider.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  String selectedCategory = "";
+
+  void handleSelectCategory(String category) {
+    setState(() {
+      selectedCategory = category;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     RestaurantsData restaurantsData = Provider.of<RestaurantsData>(context);
+    List<Restaurant> filteredRestaurants =
+        selectedCategory != ""
+            ? restaurantsData.listRestaurant
+                .where(
+                  (restaurant) =>
+                      restaurant.categories.contains(selectedCategory),
+                )
+                .toList()
+            : restaurantsData.listRestaurant;
 
     return Scaffold(
       appBar: getAppBar(context: context),
@@ -69,8 +91,11 @@ class HomeScreen extends StatelessWidget {
                   children: List.generate(
                     CategoriesData.listCategories.length,
                     (index) {
+                      String category = CategoriesData.listCategories[index];
                       return CategoryWidget(
-                        category: CategoriesData.listCategories[index],
+                        category: category,
+                        isSelected: selectedCategory == category,
+                        onTapCategory: handleSelectCategory,
                       );
                     },
                   ),
@@ -87,10 +112,8 @@ class HomeScreen extends StatelessWidget {
               ),
               Column(
                 spacing: 8,
-                children: List.generate(restaurantsData.listRestaurant.length, (
-                  index,
-                ) {
-                  Restaurant restaurant = restaurantsData.listRestaurant[index];
+                children: List.generate(filteredRestaurants.length, (index) {
+                  Restaurant restaurant = filteredRestaurants[index];
                   return RestaurantWidget(restaurant: restaurant);
                 }),
               ),
