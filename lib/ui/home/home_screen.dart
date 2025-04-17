@@ -6,6 +6,7 @@ import 'package:flutter_techtaste/ui/_core/app_colors.dart';
 import 'package:flutter_techtaste/ui/_core/widgets/appbar.dart';
 import 'package:flutter_techtaste/ui/home/widgets/category_widget.dart';
 import 'package:flutter_techtaste/ui/home/widgets/restaurant_widget.dart';
+import 'package:flutter_techtaste/utils/utils.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -16,7 +17,20 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final TextEditingController _searchTextController = TextEditingController();
+  String searchText = "";
   String selectedCategory = "";
+
+  @override
+  void initState() {
+    super.initState();
+
+    _searchTextController.addListener(() {
+      setState(() {
+        searchText = _searchTextController.text;
+      });
+    });
+  }
 
   void handleSelectCategory(String category) {
     setState(() {
@@ -27,6 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     RestaurantsData restaurantsData = Provider.of<RestaurantsData>(context);
+
     List<Restaurant> filteredRestaurants =
         selectedCategory != ""
             ? restaurantsData.listRestaurant
@@ -36,6 +51,17 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
                 .toList()
             : restaurantsData.listRestaurant;
+
+    filteredRestaurants =
+        searchText.isNotEmpty
+            ? filteredRestaurants
+                .where(
+                  (restaurant) => Utils.normalizeText(
+                    restaurant.description.toString(),
+                  ).contains(searchText.toLowerCase()),
+                )
+                .toList()
+            : filteredRestaurants;
 
     return Scaffold(
       appBar: getAppBar(context: context),
@@ -57,6 +83,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ),
               TextFormField(
+                controller: _searchTextController,
                 decoration: InputDecoration(
                   enabledBorder: OutlineInputBorder(
                     borderSide: BorderSide(
