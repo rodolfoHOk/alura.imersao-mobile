@@ -1,0 +1,64 @@
+{
+    "id": "56113bdc-95f3-4074-8f22-a1057774b249",
+    "imagePath": "restaurants/mais-sabor.png",
+    "name": "Mais Sabor",
+    "description": "Pratos clássicos com mais Sabor",
+    "stars": 4.8,
+    "distance": 2,
+    "categories": [
+        "Principais",
+        "Sobremesas",
+        "Massas"
+    ],
+    "dishes": [
+        {
+            "id": "994c56a7-0e83-41b5-b1d1-68a6ff9a1ceb",
+            "imagePath": "dishes/panda-sushi/espaguete-bolonhesa.png",
+            "name": "Espaguete a Bolonhesa",
+            "description": "Delicie-se com o nosso espaguete à bolonhesa, um clássico reconfortante da culinária italiana. Generosos fios de massa fresca envolvidos em um rico e saboroso molho à bolonhesa, preparado lentamente com carne moída selecionada, tomates maduros, ervas aromáticas e um toque especial da casa. Uma explosão de sabor em cada garfada!",
+            "price": 32
+        },
+        {
+            "id": "a1b2c3d4-e5f6-7890-1234-567890abcdef",
+            "imagePath": "dishes/mais-sabor/risoto-cogumelos.png",
+            "name": "Risoto de Cogumelos",
+            "description": "Desfrute do nosso cremoso risoto de cogumelos, uma experiência sofisticada e terrosa. Arroz arbóreo cozido lentamente em um caldo aromático, abraçando a intensidade de cogumelos frescos selecionados, um toque de vinho branco e queijo parmesão ralado. Uma sinfonia de sabores que encanta o paladar!",
+            "price": 38
+        },
+        {
+            "id": "f9e8d7c6-b5a4-3210-fedc-ba9876543210",
+            "imagePath": "dishes/mais-sabor/salmao-legumes.png",
+            "name": "Salmão com Legumes",
+            "description": "Saboreie o nosso delicioso salmão grelhado, uma opção leve e nutritiva. Um filé suculento de salmão fresco, preparado com maestria para manter sua textura macia e sabor delicado, acompanhado de uma seleção vibrante de legumes da estação salteados, realçando a frescura e os aromas naturais. Uma combinação perfeita para uma refeição saudável e saborosa!",
+            "price": 52
+        },
+        {
+            "id": "01234567-89ab-cdef-0123-456789abcdef01",
+            "imagePath": "dishes/mais-sabor/strogonoff-frango.png",
+            "name": "Strogonoff de Frango",
+            "description": "Aconchegue-se com o nosso cremoso strogonoff de frango, um clássico reinventado com o toque especial da nossa cozinha. Cubos macios de frango em um molho rico e aveludado à base de creme de leite fresco, cogumelos laminados, cebola e um toque de mostarda Dijon. Servido tradicionalmente com arroz branco fofo e batata palha crocante. Uma explosão de sabor familiar e irresistível!",
+            "price": 34
+        },
+        {
+            "id": "bcdefa01-2345-6789-abcd-ef0123456789",
+            "imagePath": "dishes/mais-sabor/pudim.png",
+            "name": "Pudim",
+            "description": "Finalize sua refeição com o nosso delicioso pudim de leite condensado, uma sobremesa clássica e irresistível. Uma textura suave e aveludada, com um sabor doce e reconfortante, coberto com uma generosa camada de caramelo dourado. Uma doçura que derrete na boca e adoça o seu dia!",
+            "price": 25
+        },
+        {
+            "id": "98765432-10fe-dcba-9876-543210fedcba",
+            "imagePath": "dishes/mais-sabor/salada-codorna.png",
+            "name": "Salada com Codorna",
+            "description": "Desfrute da nossa sofisticada salada com codorna, uma opção leve e cheia de sabor. Folhas verdes frescas e crocantes combinadas com ovos de codorna cozidos, tomate cereja doce, lascas de parmesão e um molho especial da casa. Uma experiência refrescante e elegante para paladares exigentes!",
+            "price": 18
+        },
+        {
+            "id": "defabc98-7654-3210-fedc-ba0987654321",
+            "imagePath": "dishes/mais-sabor/sopa-tomate.png",
+            "name": "Sopa de Tomate",
+            "description": "Aqueça o seu paladar com a nossa reconfortante sopa de tomate, preparada com tomates maduros e selecionados, cozidos lentamente com ervas frescas e um toque suave de alho e cebola. Uma textura aveludada e um sabor vibrante que nutre e acalma. Perfeita para qualquer momento!",
+            "price": 20
+        }
+    ]
+}

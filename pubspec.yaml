@@ -65,6 +65,7 @@ flutter:
     - assets/banners/
     - assets/categories/
     - assets/dishes/
+    - assets/dishes/mais-sabor/
     - assets/others/
     - assets/restaurants/
 

@@ -33,7 +33,10 @@ class DishWidget extends StatelessWidget {
           ),
           child: Column(
             children: [
-              Image.asset("assets/dishes/default.png"),
+              ClipRRect(
+                borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+                child: Image.asset("assets/${dish.imagePath}"),
+              ),
               Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Column(

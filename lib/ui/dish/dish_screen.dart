@@ -49,7 +49,10 @@ class _DishScreenState extends State<DishScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               spacing: 8,
               children: [
-                Image.asset("assets/dishes/default.png"),
+                ClipRRect(
+                  borderRadius: BorderRadius.vertical(top: Radius.circular(16)),
+                  child: Image.asset("assets/${widget.dish.imagePath}"),
+                ),
                 Text(
                   widget.dish.name,
                   style: TextStyle(

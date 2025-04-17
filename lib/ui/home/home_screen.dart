@@ -59,7 +59,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ? filteredRestaurants
                 .where(
                   (restaurant) => Utils.normalizeText(
-                    restaurant.description.toString(),
+                    restaurant.toString(),
                   ).contains(searchText.toLowerCase()),
                 )
                 .toList()

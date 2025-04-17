@@ -18,7 +18,12 @@ class RestaurantScreen extends StatelessWidget {
         child: Column(
           children: [
             Center(
-              child: Image.asset('assets/${restaurant.imagePath}', width: 160),
+              child: ClipOval(
+                child: Image.asset(
+                  'assets/${restaurant.imagePath}',
+                  width: 160,
+                ),
+              ),
             ),
             SizedBox(height: 24),
             Expanded(

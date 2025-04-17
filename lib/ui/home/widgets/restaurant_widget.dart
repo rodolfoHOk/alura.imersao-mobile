@@ -22,7 +22,9 @@ class RestaurantWidget extends StatelessWidget {
       child: Row(
         spacing: 16,
         children: [
-          Image.asset('assets/${restaurant.imagePath}', width: 96),
+          ClipOval(
+            child: Image.asset('assets/${restaurant.imagePath}', width: 96),
+          ),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             spacing: 4,
