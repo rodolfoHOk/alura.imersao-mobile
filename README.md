@@ -11,12 +11,35 @@
 
 ### Splash Screen
 
-![Splash Screen 01](/files/splash_screen_01.png)
+![PrintScreen 01](/files/printscreen-01.png)
 
 ### Home Screen
 
-![Home Screen 01](/files/home_screen_01.png)
-![Home Screen 02](/files/home_screen_02.png)
+![PrintScreen 02](/files/printscreen-02.png)
+![PrintScreen 03](/files/printscreen-03.png)
+
+#### Home Screen com Filtros
+
+![PrintScreen 04](/files/printscreen-04.png)
+![PrintScreen 05](/files/printscreen-05.png)
+
+### Restaurant Screen
+
+![PrintScreen 06](/files/printscreen-06.png)
+![PrintScreen 07](/files/printscreen-07.png)
+
+### Dish Screen
+
+![PrintScreen 08](/files/printscreen-08.png)
+![PrintScreen 09](/files/printscreen-09.png)
+
+#### Dish Screen com items adicionados na sacola
+
+![PrintScreen 10](/files/printscreen-10.png)
+
+### Checkout Screen
+![PrintScreen 11](/files/printscreen-11.png)
+![PrintScreen 12](/files/printscreen-12.png)
 
 ## Aula 01 - Seu app começa aqui! Monte a base e a primeira tela
 
@@ -83,8 +106,10 @@ Nesta aula, você vai:
 - Uso de um Dispositivo Virtual Android do Android Studio
 - Mudanças na UI para ser um pouco mais fiel ao design do Figma
 - Adicionado as seções de pagamento, endereço de entrega e confirmação do pedido na página de checkout como no Figma
+- Adicionada funcionalidade de calcular o preço total do pedido
 - Mudança na exibição dos pratos na tela do restaurante para seguir o Figma
 - Adicionado a tela do prato para seguir o Figma
+- Adicionadas as funcionalidades de filtrar restaurantes pela categoria e/ou pela barra de pesquisa
 
 ## Rodar
 
