@@ -38,8 +38,13 @@
 ![PrintScreen 10](/files/printscreen-10.png)
 
 ### Checkout Screen
+
 ![PrintScreen 11](/files/printscreen-11.png)
 ![PrintScreen 12](/files/printscreen-12.png)
+
+### Drawer Menu
+
+![PrintScreen 13](/files/printscreen-13.png)
 
 ## Aula 01 - Seu app começa aqui! Monte a base e a primeira tela
 
@@ -110,10 +115,8 @@ Nesta aula, você vai:
 - Mudança na exibição dos pratos na tela do restaurante para seguir o Figma
 - Adicionado a tela do prato para seguir o Figma
 - Adicionadas as funcionalidades de filtrar restaurantes pela categoria e/ou pela barra de pesquisa
-
-## Em breve
-
-- Implementação do drawer menu
+- Adicionada implementação do drawer menu
+- Drawer menu incrementado em relação ao Figma
 
 ## Rodar
 

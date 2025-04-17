@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_techtaste/data/categories_data.dart';
 import 'package:flutter_techtaste/data/restaurants_data.dart';
 import 'package:flutter_techtaste/model/restaurant.dart';
+import 'package:flutter_techtaste/routes/routes.dart';
 import 'package:flutter_techtaste/ui/_core/app_colors.dart';
 import 'package:flutter_techtaste/ui/_core/widgets/appbar.dart';
 import 'package:flutter_techtaste/ui/home/widgets/category_widget.dart';
+import 'package:flutter_techtaste/ui/home/widgets/menu_button.dart';
 import 'package:flutter_techtaste/ui/home/widgets/restaurant_widget.dart';
 import 'package:flutter_techtaste/utils/utils.dart';
 import 'package:provider/provider.dart';
@@ -68,12 +70,52 @@ class _HomeScreenState extends State<HomeScreen> {
       drawer: Drawer(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          spacing: 12,
           children: [
             DrawerHeader(
               decoration: BoxDecoration(color: AppColors.lightBackgroundColor),
               child: Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Image.asset("assets/logo.png"),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                spacing: 12,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 24,
+                      vertical: 12,
+                    ),
+                    child: Text(
+                      "Menu",
+                      style: TextStyle(
+                        fontSize: 14,
+                        color: AppColors.mainTextColor,
+                      ),
+                    ),
+                  ),
+                  MenuButton(
+                    label: "Home",
+                    onButtonTap: () {
+                      Navigator.pushNamed(context, AppRoutes.home);
+                    },
+                  ),
+                  MenuButton(
+                    label: "Sacola",
+                    onButtonTap: () {
+                      Navigator.pushNamed(context, AppRoutes.checkout);
+                    },
+                  ),
+                  MenuButton(
+                    label: "Minha Conta",
+                    isDisable: true,
+                    onButtonTap: () {},
+                  ),
+                ],
               ),
             ),
           ],
