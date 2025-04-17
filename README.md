@@ -111,6 +111,10 @@ Nesta aula, você vai:
 - Adicionado a tela do prato para seguir o Figma
 - Adicionadas as funcionalidades de filtrar restaurantes pela categoria e/ou pela barra de pesquisa
 
+## Em breve
+
+- Implementação do drawer menu
+
 ## Rodar
 
 ### Requisitos

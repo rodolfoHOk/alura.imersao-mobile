@@ -65,7 +65,20 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Scaffold(
       appBar: getAppBar(context: context),
-      drawer: Drawer(child: Center(child: Text("Conteúdo do drawer"))),
+      drawer: Drawer(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            DrawerHeader(
+              decoration: BoxDecoration(color: AppColors.lightBackgroundColor),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Image.asset("assets/logo.png"),
+              ),
+            ),
+          ],
+        ),
+      ),
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24),
         child: SingleChildScrollView(

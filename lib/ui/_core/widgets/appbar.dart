@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_techtaste/routes/routes.dart';
 import 'package:flutter_techtaste/ui/_core/bag_provider.dart';
-import 'package:flutter_techtaste/ui/checkout/checkout_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:badges/badges.dart' as badges;
 
@@ -45,14 +45,7 @@ AppBar getAppBar({required BuildContext context, String? title}) {
         ),
         child: IconButton(
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return CheckoutScreen();
-                },
-              ),
-            );
+            Navigator.pushNamed(context, AppRoutes.checkout);
           },
           icon: Icon(Icons.shopping_basket),
           iconSize: 28,

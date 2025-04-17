@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_techtaste/model/restaurant.dart';
+import 'package:flutter_techtaste/routes/routes.dart';
 import 'package:flutter_techtaste/ui/_core/app_colors.dart';
-import 'package:flutter_techtaste/ui/restaurant/restaurant_screen.dart';
 
 class RestaurantWidget extends StatelessWidget {
   final Restaurant restaurant;
@@ -12,13 +12,10 @@ class RestaurantWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(
+        Navigator.pushNamed(
           context,
-          MaterialPageRoute(
-            builder: (context) {
-              return RestaurantScreen(restaurant: restaurant);
-            },
-          ),
+          AppRoutes.restaurant,
+          arguments: restaurant,
         );
       },
       borderRadius: BorderRadius.circular(8),
