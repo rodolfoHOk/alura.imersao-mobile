@@ -82,8 +82,9 @@ Nesta aula, você vai:
 - Uso do Visual Studio Code ao Invés do IDX
 - Uso de um Dispositivo Virtual Android do Android Studio
 - Mudanças na UI para ser um pouco mais fiel ao design do Figma
-- Adicionado as seções de pagamento, endereço de entrega e Confirmação do pedido na página de checkout
-- 
+- Adicionado as seções de pagamento, endereço de entrega e confirmação do pedido na página de checkout como no Figma
+- Mudança na exibição dos pratos na tela do restaurante para seguir o Figma
+- Adicionado a tela do prato para seguir o Figma
 
 ## Rodar
 

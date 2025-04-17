@@ -51,7 +51,7 @@ class DishWidget extends StatelessWidget {
                     dish.price.toStringAsFixed(2),
                     style: TextStyle(
                       fontSize: 14,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w400,
                       color: AppColors.mainTextColor,
                     ),
                   ),
@@ -62,7 +62,7 @@ class DishWidget extends StatelessWidget {
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       fontSize: 14,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w400,
                       color: AppColors.mainTextColor,
                     ),
                   ),
